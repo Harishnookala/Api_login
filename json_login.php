@@ -6,7 +6,8 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 include_once 'database.php';
-include "registration.php";
+include_once 'registration.php';
+
 $database = new DatabaseService();
 $db = $database->getConnection();
 
@@ -22,15 +23,9 @@ $email_exists = $login->emailExists();
 
 
 if ($email_exists){
-    $token = array(
 
-            "id" => $login->id,
-            "username" => $login->Username,
-            "phonenumber" => $login->phonenumber,
-            "email" => $login->email
-    );
+
     http_response_code(200);
-
 
     echo json_encode(
         array(

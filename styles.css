@@ -1,0 +1,22 @@
+.nav-item{
+   margin-left: 15px;
+    margin-right: 15px;
+}
+.content {
+    max-width: 30%;
+    margin: auto;
+    left: 2%;
+    right: 1%;
+    top:5%;
+    position: absolute;
+}
+#signup_button{
+    border-radius: 50px;
+    background-color: lightcoral;
+    margin: 10px;
+}
+.wrapper_border{
+    border:3px solid chocolate;
+    margin: 15px;
+    padding: 25px;
+}

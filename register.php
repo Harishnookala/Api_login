@@ -33,7 +33,6 @@ if(
     $user_register->create()
 ){
     http_response_code(200);
-
     // display message: user was created
     echo json_encode(array("message" => "User was created."));
 }
